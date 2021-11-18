@@ -1,15 +1,3 @@
-# 🚀 Welcome to your new awesome project!
+# Igor Zolotarev CV
 
-This project has been created using **webpack-cli**, you can now run
-
-```
-npm run build
-```
-
-or
-
-```
-yarn build
-```
-
-to bundle your application
+https://izolotarev.github.io/igor-cv-responsive/
