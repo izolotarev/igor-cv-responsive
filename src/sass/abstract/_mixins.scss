@@ -1,4 +1,4 @@
-@mixin font($size, $height: $size, $weight: bold, $style: normal) {
+@mixin font($size, $height: $size, $weight: normal, $style: normal) {
   font-size: $size;
   font-style: $style;
   font-weight: $weight;
@@ -11,6 +11,24 @@
   justify-content: space-between;
   > * {
     flex-basis: $width;
+  }
+}
+
+@mixin media-content {
+  @media (max-width: $content-width) {
+    @content;
+  }
+}
+
+@mixin media-tablet {
+  @media (max-width: $tablet-width) {
+    @content;
+  }
+}
+
+@mixin media-mobile {
+  @media (max-width: $mobile-width) {
+    @content;
   }
 }
 

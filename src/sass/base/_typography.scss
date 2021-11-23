@@ -1,3 +1,24 @@
 .heading-1 {
-  color: blue;
+  @extend %font-prim;
+  @include font($size: 6rem, $height: 7.2rem, $weight: 800);
+
+  color: $color-blue;
+}
+
+.heading-2 {
+  @extend %font-prim;
+  @include font($size: 3.6rem, $height: 5.4rem, $weight: 800);
+
+  &_blue {
+    color: $color-blue;
+  }
+}
+
+.heading-3 {
+  @extend %font-prim;
+  @include font($size: 2.8rem, $height: 4rem, $weight: bold);
+
+  &_blue {
+    color: $color-blue;
+  }
 }

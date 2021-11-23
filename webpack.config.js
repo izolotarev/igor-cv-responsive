@@ -26,7 +26,7 @@ module.exports = () => {
     mode: isProduction ? 'production' : 'development',
     entry: ['./src/index.ts', './src/sass/style.scss'],
     devtool: isProduction ? false : 'inline-source-map',
-    watch: !isProduction,
+    // watch: !isProduction,
     output: {
       path: path.resolve(__dirname, 'dist'),
       filename: 'bundle.js',

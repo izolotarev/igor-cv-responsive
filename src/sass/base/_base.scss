@@ -7,14 +7,15 @@
 }
 
 html {
-  box-sizing: border-box;
+  font-size: 62.5%;
   scroll-behavior: smooth;
 }
 
 body {
-  font-size: 16px;
-  font-family: $font-primary;
-  // background-image: url("../assets/img/welcome-slider/1.jpg");
+  @extend %font-prim;
+  @include font($size: 2rem, $height: 2.4rem, $weight: 500);
+
+  box-sizing: border-box;
 }
 
 .visually-hidden:not(:focus):not(:active) {

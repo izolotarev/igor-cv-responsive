@@ -4,8 +4,11 @@
 @import "abstract/placeholders";
 @import "base/base";
 @import "base/typography";
-@import "components/someSection.scss";
-
-// body {
-//   background-image: url("../assets/img/welcome-slider/1.jpg");
-// }
+@import "layouts/header";
+@import "layouts/wrapper";
+@import "layouts/columns";
+@import "components/projects";
+@import "components/education";
+@import "components/work";
+@import "components/skills";
+@import "layouts/footer";
