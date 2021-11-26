@@ -15,27 +15,48 @@
 }
 
 .education__heading {
-  margin-left: 30.8%; //340px;
+  margin-left: 340px;
   margin-bottom: 20px;
+
+  @media (max-width: 876px) {
+    margin-left: 0;
+  }
 }
 
 .education__list {
   list-style: none;
+
+  @media (max-width: 660px) {
+    display: block;
+  }
 }
 
 .education__list-item {
-  flex-basis: 69%;
+  // flex-basis: 69%;
+  flex-basis: 50%;
+  flex-grow: 1;
+
+  @media (max-width: 876px) {
+    flex-basis: 70%;
+    flex-grow: 0;
+  }
 }
 
 .education__date {
   margin-top: 10px;
   color: $color-dark-grey;
 
-  flex-basis: 26.786%;
+  //flex-basis: 26.786%;
+  width: 340px;
+
+  @media (max-width: 876px) {
+    width: auto;
+    flex-basis: 26.786%;
+  }
 }
 
 .education__list-item:nth-child(2) {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .education__title {
@@ -52,36 +73,36 @@
   margin-bottom: 5px;
 }
 
-@media (max-width: 1024px) {
-  .education {
-    padding: 20px;
-  }
+// @media (max-width: 1024px) {
+//   .education {
+//     padding: 20px;
+//   }
 
-  .education__wrapper {
-    grid-template-columns: 300px 660px;
-    column-gap: 20px;
-    row-gap: 20px;
-  }
+//   .education__wrapper {
+//     grid-template-columns: 300px 660px;
+//     column-gap: 20px;
+//     row-gap: 20px;
+//   }
 
-  .education__heading {
-    margin-left: 320px;
-  }
-}
+//   .education__heading {
+//     margin-left: 320px;
+//   }
+// }
 
-@media (max-width: 768px) {
-  .education {
-    padding: 20px;
-  }
+// @media (max-width: 768px) {
+//   .education {
+//     padding: 20px;
+//   }
 
-  .education__wrapper {
-    display: block;
-  }
+//   .education__wrapper {
+//     display: block;
+//   }
 
-  .education__heading {
-    margin-left: 0px;
-  }
+//   .education__heading {
+//     margin-left: 0px;
+//   }
 
-  .education__date {
-    margin-bottom: 30px;
-  }
-}
+//   .education__date {
+//     margin-bottom: 30px;
+//   }
+// }
